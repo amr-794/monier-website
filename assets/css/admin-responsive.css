@@ -1,0 +1,372 @@
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 1200px) {
+    .admin-container {
+        padding: 15px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .user-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-container {
+        justify-content: flex-start;
+    }
+    
+    .nav-link span {
+        display: none;
+    }
+    
+    .nav-link {
+        padding: 12px;
+        border-radius: 8px;
+        margin: 0 2px;
+    }
+    
+    .nav-link.active {
+        border-bottom: 3px solid transparent;
+        background: rgba(255,255,255,0.2);
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 10px;
+    }
+    
+    .page-header {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .card-header {
+        padding: 15px;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .actions {
+        flex-direction: column;
+    }
+    
+    .data-table {
+        font-size: 0.9rem;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 8px 6px;
+    }
+    
+    .main-nav {
+        padding: 5px 0;
+    }
+    
+    .nav-container {
+        gap: 2px;
+    }
+    
+    .nav-link {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .nav-link i {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-top {
+        padding: 10px 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .user-info {
+        gap: 10px;
+    }
+    
+    .welcome-text {
+        font-size: 0.8rem;
+    }
+    
+    .logout-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .logout-btn span {
+        display: none;
+    }
+    
+    .page-header {
+        padding: 15px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.3rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .stat-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .form-container {
+        padding: 15px;
+    }
+    
+    .table-responsive {
+        font-size: 0.8rem;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 6px 4px;
+    }
+    
+    /* إخفاء بعض الأعمدة في الجداول على الشاشات الصغيرة */
+    .data-table th:nth-child(4),
+    .data-table td:nth-child(4),
+    .data-table th:nth-child(5),
+    .data-table td:nth-child(5) {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-container {
+        padding: 5px;
+    }
+    
+    .nav-link {
+        padding: 8px 6px;
+        font-size: 0.75rem;
+    }
+    
+    .card-header h2,
+    .card-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+}
+
+/* تحسينات خاصة للشاشات العمودية الصغيرة */
+@media (max-width: 360px) {
+    .header-top {
+        padding: 8px 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .logo small {
+        font-size: 0.7rem;
+    }
+    
+    .user-info {
+        gap: 5px;
+    }
+    
+    .online-indicator {
+        font-size: 0.7rem;
+    }
+    
+    .welcome-text {
+        font-size: 0.7rem;
+    }
+    
+    .nav-container {
+        gap: 1px;
+    }
+    
+    .nav-link {
+        padding: 6px 4px;
+        font-size: 0.7rem;
+    }
+    
+    .nav-link i {
+        font-size: 0.7rem;
+    }
+    
+    .page-header {
+        padding: 12px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.1rem;
+    }
+    
+    .page-header p {
+        font-size: 0.9rem;
+    }
+}
+
+/* تحسينات للوضع الأفقي على الهواتف */
+@media (max-height: 500px) and (orientation: landscape) {
+    .admin-header {
+        position: relative;
+    }
+    
+    .main-nav {
+        max-height: 60px;
+    }
+    
+    .nav-container {
+        padding-bottom: 5px;
+    }
+}
+
+/* تحسينات للطباعة */
+@media print {
+    .admin-header,
+    .admin-footer,
+    .btn {
+        display: none;
+    }
+    
+    .admin-container {
+        padding: 0;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* دعم الأجهزة التي تفضل الوضع المظلم */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-bg: #1a1a1a;
+        --dark-text: #ffffff;
+        --gray-text: #cccccc;
+        --border-color: #333333;
+    }
+    
+    .card,
+    .table-container,
+    .form-container {
+        background: #2d2d2d;
+        color: white;
+    }
+    
+    .data-table th {
+        background: #333333;
+    }
+    
+    .data-table tr:hover {
+        background: #333333;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        background: #333333;
+        border-color: #555555;
+        color: white;
+    }
+    
+    .badge-success {
+        background: #155724;
+        color: #d4edda;
+    }
+    
+    .badge-warning {
+        background: #856404;
+        color: #fff3cd;
+    }
+    
+    .badge-info {
+        background: #0c5460;
+        color: #d1ecf1;
+    }
+}
